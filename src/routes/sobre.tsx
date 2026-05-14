@@ -53,7 +53,7 @@ function About() {
             </div>
           </div>
           <div className="relative">
-            <div className="float relative mx-auto aspect-square w-72 rounded-3xl bg-gradient-to-br from-primary/20 via-accent/15 to-transparent p-8 glow">
+            <div className="float relative mx-auto aspect-square w-72 rounded-3xl bg-linear-to-br from-primary/20 via-accent/15 to-transparent p-8 glow">
               <div className="grid h-full place-items-center rounded-2xl border border-primary/30 bg-background/40 backdrop-blur">
                 <CloudSun className="h-32 w-32 text-primary" />
               </div>
