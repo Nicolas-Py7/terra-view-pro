@@ -39,9 +39,12 @@ export const Route = createFileRoute("/")({
 
 function Dashboard() {
   const [live, setLive] = useState(() => generateLive());
+  const [mounted, setMounted] = useState(false);
   const series = useMemo(() => generateSeries(24), []);
 
   useEffect(() => {
+    setMounted(true);
+    setLive(generateLive());
     const id = setInterval(() => setLive(generateLive()), 5000);
     return () => clearInterval(id);
   }, []);
@@ -62,7 +65,7 @@ function Dashboard() {
         </div>
         <div className="flex items-center gap-2 text-xs text-muted-foreground">
           <Clock className="h-3.5 w-3.5" />
-          Última atualização <span className="font-medium text-foreground">{live.time}</span>
+          Última atualização <span className="font-medium text-foreground">{mounted ? live.time : "--:--"}</span>
         </div>
       </div>
 
