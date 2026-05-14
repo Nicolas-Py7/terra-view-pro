@@ -65,7 +65,7 @@ function Dashboard() {
         </div>
         <div className="flex items-center gap-2 text-xs text-muted-foreground">
           <Clock className="h-3.5 w-3.5" />
-          Última atualização <span className="font-medium text-foreground">{live.time}</span>
+          Última atualização <span className="font-medium text-foreground">{mounted ? live.time : "--:--"}</span>
         </div>
       </div>
 
