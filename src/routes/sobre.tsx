@@ -13,7 +13,7 @@ export const Route = createFileRoute("/sobre")({
 });
 
 const tech = [
-  { icon: Cpu, name: "ESP32 / Arduino", desc: "Microcontrolador para aquisição de sinais analógicos e digitais." },
+  { icon: Cpu, name: "ESP32", desc: "Microcontrolador para aquisição de sinais analógicos e digitais." },
   { icon: Radio, name: "Wi-Fi / MQTT", desc: "Transmissão dos dados em tempo real para o servidor." },
   { icon: Database, name: "PostgreSQL", desc: "Armazenamento histórico das medições e metadados." },
   { icon: Code2, name: "React + TypeScript", desc: "Dashboard moderno e responsivo." },
