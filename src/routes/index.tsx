@@ -38,16 +38,16 @@ export const Route = createFileRoute("/")({
 });
 
 function Dashboard() {
-  const [live, setLive] = useState<ReturnType<typeof generateLive> | null>(null);
+  const [live, setLive] = useState(() => generateLive());
+  const [mounted, setMounted] = useState(false);
   const series = useMemo(() => generateSeries(24), []);
 
   useEffect(() => {
+    setMounted(true);
     setLive(generateLive());
     const id = setInterval(() => setLive(generateLive()), 5000);
     return () => clearInterval(id);
   }, []);
-
-  if (!live) live = generateLive() as any;
 
   return (
     <Layout title="Dashboard climático" subtitle="Monitoramento em tempo real · Estação MeteoStation #001">
