@@ -20,10 +20,9 @@ const tech = [
 ];
 
 const team = [
-  { name: "Ana Silva", role: "Hardware & sensores" },
-  { name: "Bruno Costa", role: "Firmware embarcado" },
-  { name: "Carla Mendes", role: "Backend & banco de dados" },
-  { name: "Diego Rocha", role: "Frontend & UX" },
+  { name: "Nicolas Gomes Pinheiro Cavalcante", role: "Hardware / sensores / Frontend / Banco de dados" },
+  { name: "Joaquim Luiz", role: "Backend / Frontend / Hardware" },
+  { name: "Cauã Laurentino Gomes", role: "Backend / Frontend / Hardware" }
 ];
 
 function About() {
