@@ -11,7 +11,7 @@ export function MetricCard({
 }: {
   icon: LucideIcon;
   label: string;
-  value: string | number;
+  value: number;
   unit?: string;
   trend?: string;
   accent?: "primary" | "accent" | "warning" | "destructive";
